@@ -1,0 +1,10 @@
+terraform {
+  backend "gcs" {
+    bucket  = "seancloud-tf-state-dev"
+    prefix  = "terraform/state"
+  }
+}
+
+module "module_baseimage" {
+  source                 = "../../module"
+}

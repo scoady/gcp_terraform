@@ -1,0 +1,3 @@
+#!/bin/bash
+export TF_PLUGIN_CACHE_DIR=$(git rev-parse --show-toplevel)/plugin-cache
+run_terraform $1 $2 $3
